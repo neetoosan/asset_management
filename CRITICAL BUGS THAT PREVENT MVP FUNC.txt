@@ -1,0 +1,39 @@
+ CRITICAL BUGS THAT PREVENT MVP FUNCTIONALITY
+
+1. Database Model Issues:
+◦  UserSession model has duplicate column definitions (lines 372-373 and 379-385 in models.py)
+◦  Inconsistent data types for session status (is_active defined twice with different defaults)
+◦  Missing relationships and foreign key constraints issues
+2. Missing Static Assets:
+◦  No app/static/images/ directory exists
+◦  Logo files referenced in code (logo.png, logo.jpg) are missing
+◦  No icon resources for the UI (references to :/icons/dashboard, :/icons/plus)
+3. Database Initialization Issues:
+◦  Database granted field inconsistency (granted=True vs granted="true")
+◦  Hard-coded database URL in config (should use environment variables)
+
+
+ MODERATE ISSUES
+
+4. Authentication & Security:
+◦  Default admin credentials are hard-coded
+◦  No proper session management for the desktop app
+◦  Password hashing inconsistency between UserService and AuthService
+5. GUI Implementation Gaps:
+◦  Asset dialog functionality incomplete
+◦  No actual chart implementations (placeholder text only)
+◦  Missing API endpoint implementations
+6. Configuration Management:
+◦  No .env file or environment variable setup
+◦  Missing pyproject.toml, README.md, .gitignore
+◦  No proper logging configuration
+
+
+
+
+
+
+
+
+
+

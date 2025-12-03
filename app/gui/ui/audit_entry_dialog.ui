@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuditEntryDialog</class>
+ <widget class="QDialog" name="AuditEntryDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Audit Entry Details</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="mainHBox">
+     <item>
+      <widget class="QListWidget" name="auditList">
+       <property name="minimumWidth">
+        <number>160</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelWho"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="whoValue"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelWhen"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="whenValue"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelAction"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="actionValue"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelDescription"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QTextEdit" name="descriptionValue">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="minimumHeight">
+          <number>120</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint">
+          <size>
+            <width>40</width>
+            <height>20</height>
+          </size>
+         </property>
+        </spacer>
+      </item>
+      <item>
+        <widget class="QPushButton" name="restoreBtn">
+         <property name="text"><string>Restore</string></property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="deleteBtn">
+         <property name="text"><string>Delete</string></property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QPushButton" name="closeBtn">
+         <property name="text"><string>Close</string></property>
+        </widget>
+      </item>
+     </layout>
+    </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

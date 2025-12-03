@@ -1,0 +1,57 @@
+asset_management_system/
+│
+├── app/                                # Main application package
+│   ├── __init__.py                     # Package initialization
+│   ├── main.py                         # Main application entry point
+│   │
+│   ├── core/                           # Core application logic
+│   │   ├── __init__.py
+│   │   ├── config.py                   # Configuration settings
+│   │   ├── database.py                 # Database connection and setup
+│   │   └── models.py                   # SQLAlchemy models
+│   │
+│   ├── gui/                            # GUI related code
+│   │   ├── __init__.py
+│   │   ├── main_window.py              # Main window implementation
+│   │   ├── dialogs/                    # Various dialog windows
+│   │   │   ├── __init__.py
+│   │   │   ├── asset_dialog.py         # Add/edit asset dialog
+│   │   │   └── user_dialog.py          # Add/edit user dialog
+│   │   └── ui/                         # Qt Designer .ui files
+│   │       ├── __init__.py
+│   │       ├── main_window.ui          # Main window UI file
+│   │       └── asset_dialog.ui         # Asset dialog UI file
+│   │
+│   ├── api/                            # Future FastAPI integration
+│   │   ├── __init__.py
+│   │   ├── main.py                     # FastAPI app instance
+│   │   └── endpoints/                  # API endpoints
+│   │       ├── __init__.py
+│   │       ├── assets.py               # Asset related endpoints
+│   │       └── users.py                # User related endpoints
+│   │
+│   └── services/                       # Business logic services
+│       ├── __init__.py
+│       ├── asset_service.py            # Asset management logic
+│       └── user_service.py             # User management logic
+│
+├── tests/                              # Test cases
+│   ├── __init__.py
+│   ├── test_models.py                  # Model tests
+│   ├── test_services.py                # Service layer tests
+│   
+│
+├── requirements/                       # Dependency files
+│   ├── base.txt                        # Core requirements
+│   ├── dev.txt                         # Development requirements
+│   └── prod.txt                        # Production requirements
+│
+├── scripts/                           # Utility scripts
+│   ├── __init__.py
+│   ├── create_db.py                    # Database initialization script
+│   └── migrate_db.py                   # Database migration script
+│
+├── .env.example                       # Environment variables template
+├── .gitignore                         # Git ignore file
+├── README.md                          # Project documentation
+└── pyproject.toml                     # Project configuration

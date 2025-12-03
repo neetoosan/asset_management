@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AssetDetails</class>
+ <widget class="QDialog" name="AssetDetails">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Asset Details</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelName">
+       <property name="text"><string>Name:</string></property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="nameLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelAssetId">
+       <property name="text"><string>Asset ID:</string></property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="assetIdLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="2" column="0">
+      <widget class="QLabel" name="labelCategory">
+       <property name="text"><string>Category:</string></property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="categoryLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="3" column="0">
+      <widget class="QLabel" name="labelDepartment">
+       <property name="text"><string>Department:</string></property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="departmentLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="4" column="0">
+      <widget class="QLabel" name="labelStatus">
+       <property name="text"><string>Status:</string></property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="statusLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="5" column="0">
+      <widget class="QLabel" name="labelAcq">
+       <property name="text"><string>Acquisition Date:</string></property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="acqDateLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="6" column="0">
+      <widget class="QLabel" name="labelExp">
+       <property name="text"><string>Expiry Date:</string></property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="expDateLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="7" column="0">
+      <widget class="QLabel" name="labelUsefulLife">
+       <property name="text"><string>Useful Life (Years):</string></property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="usefulLifeLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="8" column="0">
+      <widget class="QLabel" name="labelDepMethod">
+       <property name="text"><string>Depreciation Method:</string></property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLabel" name="depMethodLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="9" column="0">
+      <widget class="QLabel" name="labelDepPercent">
+       <property name="text"><string>Annual Depreciation %:</string></property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLabel" name="depPercentLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="10" column="0">
+      <widget class="QLabel" name="labelAccumDep">
+       <property name="text"><string>Accumulated Depreciation (₦):</string></property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLabel" name="accumDepLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="11" column="0">
+      <widget class="QLabel" name="labelValue">
+       <property name="text"><string>Net Book Value (₦):</string></property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLabel" name="valueLabel">
+       <property name="text"><string>-</string></property>
+      </widget>
+     </item>
+
+     <item row="12" column="0" colspan="2">
+      <widget class="QLabel" name="labelDescription">
+       <property name="text"><string>Description:</string></property>
+      </widget>
+     </item>
+     <item row="13" column="0" colspan="2">
+      <widget class="QTextEdit" name="descriptionText">
+       <property name="readOnly"><bool>true</bool></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="qrButton">
+       <property name="text"><string>QR</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

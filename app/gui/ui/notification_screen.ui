@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>NotificationScreen</class>
+  <widget class="QWidget" name="NotificationScreen">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>800</width>
+        <height>600</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>Notifications</string>
+    </property>
+    <layout class="QVBoxLayout" name="mainLayout">
+      <property name="leftMargin">
+        <number>20</number>
+      </property>
+      <property name="topMargin">
+        <number>20</number>
+      </property>
+      <property name="rightMargin">
+        <number>20</number>
+      </property>
+      <property name="bottomMargin">
+        <number>20</number>
+      </property>
+      <item>
+        <widget class="QLabel" name="titleLabel">
+          <property name="text">
+            <string>Notifications</string>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+        </widget>
+      </item>
+      <item>
+        <widget class="QFrame" name="centralFrame">
+          <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="frameLayout">
+            <property name="leftMargin">
+              <number>10</number>
+            </property>
+            <property name="topMargin">
+              <number>10</number>
+            </property>
+            <property name="rightMargin">
+              <number>10</number>
+            </property>
+            <property name="bottomMargin">
+              <number>10</number>
+            </property>
+            <item>
+              <widget class="QTabWidget" name="notificationTabs">
+                <property name="currentIndex">
+                  <number>0</number>
+                </property>
+                <widget class="QWidget" name="todayTab">
+                  <attribute name="title">
+                    <string>Today</string>
+                  </attribute>
+                  <layout class="QVBoxLayout" name="todayLayout">
+                    <item>
+                      <widget class="QScrollArea" name="todayScrollArea">
+                        <property name="widgetResizable">
+                          <bool>true</bool>
+                        </property>
+                        <widget class="QWidget" name="todayScrollContent">
+                          <property name="geometry">
+                            <rect>
+                              <x>0</x>
+                              <y>0</y>
+                              <width>742</width>
+                              <height>485</height>
+                            </rect>
+                          </property>
+                          <layout class="QVBoxLayout" name="todayContentLayout">
+                            <item>
+                              <widget class="QLabel" name="todayPlaceholder">
+                                <property name="text">
+                                  <string>No notifications for today</string>
+                                </property>
+                                <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <spacer name="todayVerticalSpacer">
+                                <property name="orientation">
+                                  <enum>Qt::Vertical</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                  <size>
+                                    <width>20</width>
+                                    <height>40</height>
+                                  </size>
+                                </property>
+                              </spacer>
+                            </item>
+                          </layout>
+                        </widget>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+                <widget class="QWidget" name="yesterdayTab">
+                  <attribute name="title">
+                    <string>Yesterday</string>
+                  </attribute>
+                  <layout class="QVBoxLayout" name="yesterdayLayout">
+                    <item>
+                      <widget class="QScrollArea" name="yesterdayScrollArea">
+                        <property name="widgetResizable">
+                          <bool>true</bool>
+                        </property>
+                        <widget class="QWidget" name="yesterdayScrollContent">
+                          <property name="geometry">
+                            <rect>
+                              <x>0</x>
+                              <y>0</y>
+                              <width>742</width>
+                              <height>485</height>
+                            </rect>
+                          </property>
+                          <layout class="QVBoxLayout" name="yesterdayContentLayout">
+                            <item>
+                              <widget class="QLabel" name="yesterdayPlaceholder">
+                                <property name="text">
+                                  <string>No notifications for yesterday</string>
+                                </property>
+                                <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <spacer name="yesterdayVerticalSpacer">
+                                <property name="orientation">
+                                  <enum>Qt::Vertical</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                  <size>
+                                    <width>20</width>
+                                    <height>40</height>
+                                  </size>
+                                </property>
+                              </spacer>
+                            </item>
+                          </layout>
+                        </widget>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+                <widget class="QWidget" name="lastWeekTab">
+                  <attribute name="title">
+                    <string>Last Week</string>
+                  </attribute>
+                  <layout class="QVBoxLayout" name="lastWeekLayout">
+                    <item>
+                      <widget class="QScrollArea" name="lastWeekScrollArea">
+                        <property name="widgetResizable">
+                          <bool>true</bool>
+                        </property>
+                        <widget class="QWidget" name="lastWeekScrollContent">
+                          <property name="geometry">
+                            <rect>
+                              <x>0</x>
+                              <y>0</y>
+                              <width>742</width>
+                              <height>485</height>
+                            </rect>
+                          </property>
+                          <layout class="QVBoxLayout" name="lastWeekContentLayout">
+                            <item>
+                              <widget class="QLabel" name="lastWeekPlaceholder">
+                                <property name="text">
+                                  <string>No notifications for last week</string>
+                                </property>
+                                <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <spacer name="lastWeekVerticalSpacer">
+                                <property name="orientation">
+                                  <enum>Qt::Vertical</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                  <size>
+                                    <width>20</width>
+                                    <height>40</height>
+                                  </size>
+                                </property>
+                              </spacer>
+                            </item>
+                          </layout>
+                        </widget>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+                <widget class="QWidget" name="allTab">
+                  <attribute name="title">
+                    <string>All</string>
+                  </attribute>
+                  <layout class="QVBoxLayout" name="allLayout">
+                    <item>
+                      <widget class="QScrollArea" name="allScrollArea">
+                        <property name="widgetResizable">
+                          <bool>true</bool>
+                        </property>
+                        <widget class="QWidget" name="allScrollContent">
+                          <property name="geometry">
+                            <rect>
+                              <x>0</x>
+                              <y>0</y>
+                              <width>742</width>
+                              <height>485</height>
+                            </rect>
+                          </property>
+                          <layout class="QVBoxLayout" name="allContentLayout">
+                            <item>
+                              <widget class="QLabel" name="allPlaceholder">
+                                <property name="text">
+                                  <string>No notifications available</string>
+                                </property>
+                                <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                                </property>
+                              </widget>
+                            </item>
+                            <item>
+                              <spacer name="allVerticalSpacer">
+                                <property name="orientation">
+                                  <enum>Qt::Vertical</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                  <size>
+                                    <width>20</width>
+                                    <height>40</height>
+                                  </size>
+                                </property>
+                              </spacer>
+                            </item>
+                          </layout>
+                        </widget>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+              </widget>
+            </item>
+          </layout>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+</ui>

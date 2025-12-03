@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>AssetDialog</class>
+  <widget class="QDialog" name="AssetDialog">
+    <property name="windowTitle">
+      <string>Add/Edit Asset</string>
+    </property>
+    <property name="minimumWidth">
+      <number>800</number>
+    </property>
+    <property name="minimumHeight">
+      <number>600</number>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+        <layout class="QFormLayout" name="formLayout">
+          <item row="0" column="0">
+            <widget class="QLabel" name="labelId">
+              <property name="text">
+                <string>Asset ID:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="0" column="1">
+            <widget class="QLineEdit" name="assetIdInput"/>
+          </item>
+          <item row="1" column="0">
+            <widget class="QLabel" name="labelDesc">
+              <property name="text">
+                <string>Asset Description:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="1" column="1">
+            <widget class="QTextEdit" name="descriptionInput">
+              <property name="maximumHeight">
+                <number>60</number>
+              </property>
+            </widget>
+          </item>
+          <item row="2" column="0">
+            <widget class="QLabel" name="labelCategory">
+              <property name="text">
+                <string>Category:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="2" column="1">
+            <widget class="QComboBox" name="categoryCombo"/>
+          </item>
+          <item row="3" column="0">
+            <widget class="QLabel" name="labelSubCategory">
+              <property name="text">
+                <string>Sub-Category:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="3" column="1">
+            <widget class="QComboBox" name="subCategoryCombo"/>
+          </item>
+          <item row="4" column="0">
+            <widget class="QLabel" name="labelAcquisition">
+              <property name="text">
+                <string>Acquisition Date:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="4" column="1">
+            <widget class="QDateEdit" name="acquisitionDateEdit">
+              <property name="calendarPopup">
+                <bool>true</bool>
+              </property>
+            </widget>
+          </item>
+          <item row="5" column="0">
+            <widget class="QLabel" name="labelSupplier">
+              <property name="text">
+                <string>Supplier / Vendor:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="5" column="1">
+            <widget class="QLineEdit" name="supplierInput"/>
+          </item>
+          <item row="6" column="0">
+            <widget class="QLabel" name="labelQuantity">
+              <property name="text">
+                <string>Quantity:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="6" column="1">
+            <widget class="QSpinBox" name="quantitySpinBox">
+              <property name="minimum">
+                <number>1</number>
+              </property>
+              <property name="maximum">
+                <number>999999</number>
+              </property>
+            </widget>
+          </item>
+          <item row="7" column="0">
+            <widget class="QLabel" name="labelUnitCost">
+              <property name="text">
+                <string>Unit Cost (₦):</string>
+              </property>
+            </widget>
+          </item>
+          <item row="7" column="1">
+            <widget class="QDoubleSpinBox" name="unitCostSpinBox">
+              <property name="decimals">
+                <number>2</number>
+              </property>
+              <property name="minimum">
+                <number>0.00</number>
+              </property>
+              <property name="maximum">
+                <number>999999999.99</number>
+              </property>
+              <property name="singleStep">
+                <number>100.00</number>
+              </property>
+              <property name="prefix">
+                <string>₦ </string>
+              </property>
+              <property name="buttonSymbols">
+                <enum>QAbstractSpinBox::UpDownArrows</enum>
+              </property>
+              <property name="accelerated">
+                <bool>true</bool>
+              </property>
+            </widget>
+          </item>
+          <item row="8" column="0">
+            <widget class="QLabel" name="labelTotalCost">
+              <property name="text">
+                <string>Total Cost (₦):</string>
+              </property>
+            </widget>
+          </item>
+          <item row="8" column="1">
+            <widget class="QLineEdit" name="totalCostInput">
+              <property name="readOnly">
+                <bool>true</bool>
+              </property>
+            </widget>
+          </item>
+          <item row="9" column="0">
+            <widget class="QLabel" name="labelUsefulLife">
+              <property name="text">
+                <string>Useful Life (Years):</string>
+              </property>
+            </widget>
+          </item>
+          <item row="9" column="1">
+            <widget class="QSpinBox" name="usefulLifeSpinBox">
+              <property name="minimum">
+                <number>1</number>
+              </property>
+              <property name="maximum">
+                <number>50</number>
+              </property>
+            </widget>
+          </item>
+          <item row="10" column="0">
+            <widget class="QLabel" name="labelDepMethod">
+              <property name="text">
+                <string>Depreciation Method:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="10" column="1">
+            <widget class="QComboBox" name="depreciationMethodCombo"/>
+          </item>
+          <item row="11" column="0">
+            <widget class="QLabel" name="labelDepPercentage">
+              <property name="text">
+                <string>Annual Depreciation %:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="11" column="1">
+            <widget class="QDoubleSpinBox" name="depreciationPercentageSpinBox">
+              <property name="decimals">
+                <number>2</number>
+              </property>
+              <property name="minimum">
+                <number>0.00</number>
+              </property>
+              <property name="maximum">
+                <number>100.00</number>
+              </property>
+              <property name="singleStep">
+                <number>0.50</number>
+              </property>
+              <property name="suffix">
+                <string> %</string>
+              </property>
+            </widget>
+          </item>
+          <item row="12" column="0">
+            <widget class="QLabel" name="labelAnnualDep">
+              <property name="text">
+                <string>Annual Depreciation (₦):</string>
+              </property>
+            </widget>
+          </item>
+          <item row="12" column="1">
+            <widget class="QLineEdit" name="annualDepreciationInput">
+              <property name="readOnly">
+                <bool>true</bool>
+              </property>
+            </widget>
+          </item>
+          <item row="13" column="0">
+            <widget class="QLabel" name="labelLocation">
+              <property name="text">
+                <string>Location:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="13" column="1">
+            <widget class="QComboBox" name="locationCombo"/>
+          </item>
+          <item row="14" column="0">
+            <widget class="QLabel" name="labelModelNumber">
+              <property name="text">
+                <string>Model Number:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="14" column="1">
+            <widget class="QLineEdit" name="modelNumberInput"/>
+          </item>
+          <item row="15" column="0">
+            <widget class="QLabel" name="labelSerialNumber">
+              <property name="text">
+                <string>Serial Number:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="15" column="1">
+            <widget class="QLineEdit" name="serialNumberInput"/>
+          </item>
+          <item row="16" column="0">
+            <widget class="QLabel" name="labelCustodian">
+              <property name="text">
+                <string>Custodian / User:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="16" column="1">
+            <widget class="QLineEdit" name="custodianInput"/>
+          </item>
+          <item row="17" column="0">
+            <widget class="QLabel" name="labelRemarks">
+              <property name="text">
+                <string>Remarks:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="17" column="1">
+            <widget class="QTextEdit" name="remarksText"/>
+          </item>
+        </layout>
+      </item>
+      <item>
+        <widget class="QDialogButtonBox" name="buttonBox">
+          <property name="standardButtons">
+            <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+          </property>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <resources/>
+  <connections>
+    <connection>
+      <sender>buttonBox</sender>
+      <signal>accepted()</signal>
+      <receiver>AssetDialog</receiver>
+      <slot>accept()</slot>
+    </connection>
+    <connection>
+      <sender>buttonBox</sender>
+      <signal>rejected()</signal>
+      <receiver>AssetDialog</receiver>
+      <slot>reject()</slot>
+    </connection>
+  </connections>
+</ui>

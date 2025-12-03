@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>MainWindow</class>
+  <widget class="QMainWindow" name="MainWindow">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1200</width>
+        <height>600</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>Asset Management System</string>
+    </property>
+    <widget class="QWidget" name="centralwidget">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+          <widget class="QFrame" name="navFrame">
+
+            <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+                <widget class="QFrame" name="logoFrame">
+                  <property name="minimumSize">
+                    <size>
+                      <width>200</width>
+                      <height>60</height>
+                    </size>
+                  </property>
+                  <property name="maximumSize">
+                    <size>
+                      <width>200</width>
+                      <height>60</height>
+                    </size>
+                  </property>
+                  <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                    <enum>QFrame::Plain</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="logoLayout">
+                    <property name="spacing">
+                      <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                      <number>10</number>
+                    </property>
+                    <property name="topMargin">
+                      <number>5</number>
+                    </property>
+                    <property name="rightMargin">
+                      <number>10</number>
+                    </property>
+                    <property name="bottomMargin">
+                      <number>5</number>
+                    </property>
+                    <item>
+                      <widget class="QLabel" name="logoLabel">
+                        <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                          </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                          <size>
+                            <width>140</width>
+                            <height>30</height>
+                          </size>
+                        </property>
+                        <property name="maximumSize">
+                          <size>
+                            <width>180</width>
+                            <height>40</height>
+                          </size>
+                        </property>
+                        <property name="text">
+                          <string/>
+                        </property>
+                        <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="scaledContents">
+                          <bool>false</bool>
+                        </property>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item>
+                <widget class="QPushButton" name="dashboardBtn">
+                  <property name="text">
+                    <string>Dashboard</string>
+                  </property>
+                  <property name="icon">
+                    <iconset>
+                      <normaloff>:/icons/dashboard</normaloff>:/icons/dashboard</iconset>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QPushButton" name="assetsBtn">
+                  <property name="text">
+                    <string>Assets ▼</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QScrollArea" name="assetScrollArea">
+                  <property name="widgetResizable">
+                    <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="assetSubMenu">
+                    <layout class="QVBoxLayout" name="assetSubMenuLayout">
+                      <property name="leftMargin">
+                        <number>10</number>
+                      </property>
+                      <property name="rightMargin">
+                        <number>5</number>
+                      </property>
+                      <property name="topMargin">
+                        <number>2</number>
+                      </property>
+                      <property name="bottomMargin">
+                        <number>2</number>
+                      </property>
+                      <property name="spacing">
+                        <number>1</number>
+                      </property>
+                      <item>
+                      <widget class="QPushButton" name="allAssetsBtn">
+                        <property name="styleSheet">
+                          <string notr="true">color: white; text-align: left; padding: 8px;</string>
+                        </property>
+                        <property name="text">
+                          <string>All Assets</string>
+                        </property>
+                      </widget>
+                    </item>
+                    </layout>
+                  </widget>
+                </widget>
+              </item>
+              <item>
+                <widget class="QPushButton" name="addAssetBtn">
+                  <property name="styleSheet">
+                    <string notr="true">color: white; text-align: left; padding: 10px; margin-left: 20px;</string>
+                  </property>
+                  <property name="text">
+                    <string>Add Asset</string>
+                  </property>
+                  <property name="icon">
+                    <iconset>
+                      <normaloff>:/icons/plus</normaloff>:/icons/plus</iconset>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QPushButton" name="reportsBtn">
+                  <property name="styleSheet">
+                    <string notr="true">color: white; text-align: left; padding: 10px;</string>
+                  </property>
+                  <property name="text">
+                    <string>Reports</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QPushButton" name="notificationsBtn">
+                  <property name="styleSheet">
+                    <string notr="true">color: white; text-align: left; padding: 10px;</string>
+                  </property>
+                  <property name="text">
+                    <string>Notifications</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QPushButton" name="adminBtn">
+                  <property name="styleSheet">
+                    <string notr="true">color: white; text-align: left; padding: 10px;</string>
+                  </property>
+                  <property name="text">
+                    <string>Admin</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QPushButton" name="settingsBtn">
+                  <property name="styleSheet">
+                    <string notr="true">color: white; text-align: left; padding: 10px;</string>
+                  </property>
+                  <property name="text">
+                    <string>Settings</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <spacer name="verticalSpacer">
+                  <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                    <size>
+                      <width>20</width>
+                      <height>40</height>
+                    </size>
+                  </property>
+                </spacer>
+              </item>
+              <item>
+                <widget class="QPushButton" name="logoutBtn">
+                  <property name="styleSheet">
+                    <string notr="true">color: white; text-align: left; padding: 10px;</string>
+                  </property>
+                  <property name="text">
+                    <string>Logout</string>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </item>
+        <item>
+          <widget class="QStackedWidget" name="contentStack">
+            <widget class="QWidget" name="dashboardPage"/>
+            <widget class="QWidget" name="assetsPage"/>
+            <widget class="QWidget" name="notificationsPage"/>
+            <widget class="QWidget" name="settingsPage"/>
+            <widget class="QWidget" name="reportsPage"/>
+            <widget class="QWidget" name="adminPage"/>
+          </widget>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <resources/>
+  <connections/>
+</ui>

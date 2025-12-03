@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingScreen</class>
+ <widget class="QWidget" name="SettingScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="text">
+      <string>Settings</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="centralFrame">
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="frameLayout">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QTabWidget" name="settingTabs">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="generalTab">
+         <attribute name="title">
+          <string>General</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="generalLayout">
+          <item>
+           <widget class="QScrollArea" name="generalScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="generalScrollContent">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>712</width>
+               <height>417</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="generalContentLayout">
+              <item>
+               <widget class="QGroupBox" name="applicationGroup">
+                <property name="title">
+                 <string>Application Settings</string>
+                </property>
+                <layout class="QFormLayout" name="applicationFormLayout">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="autoStartLabel">
+                   <property name="text">
+                    <string>Start with Windows:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="autoStartCheckBox">
+                   <property name="text">
+                    <string>Enable</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="minimizeToTrayLabel">
+                   <property name="text">
+                    <string>Minimize to System Tray:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QCheckBox" name="minimizeToTrayCheckBox">
+                   <property name="text">
+                    <string>Enable</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="confirmExitLabel">
+                   <property name="text">
+                    <string>Confirm on Exit:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QCheckBox" name="confirmExitCheckBox">
+                   <property name="text">
+                    <string>Enable</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="languageGroup">
+                <property name="title">
+                 <string>Language and Region</string>
+                </property>
+                <layout class="QFormLayout" name="languageFormLayout">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="languageLabel">
+                   <property name="text">
+                    <string>Language:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QComboBox" name="languageComboBox">
+                   <item>
+                    <property name="text">
+                     <string>English</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Spanish</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>French</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="dateFormatLabel">
+                   <property name="text">
+                    <string>Date Format:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QComboBox" name="dateFormatComboBox">
+                   <item>
+                    <property name="text">
+                     <string>DD/MM/YYYY</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>MM/DD/YYYY</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>YYYY-MM-DD</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="currencyLabel">
+                   <property name="text">
+                    <string>Currency:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QComboBox" name="currencyComboBox">
+                   <item>
+                    <property name="text">
+                     <string>USD ($)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>EUR (€)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>GBP (£)</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="appearanceTab">
+         <attribute name="title">
+          <string>Appearance</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="appearanceLayout">
+          <item>
+           <widget class="QScrollArea" name="appearanceScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="appearanceScrollContent">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>712</width>
+               <height>417</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="appearanceContentLayout">
+              <item>
+               <widget class="QGroupBox" name="themeGroup">
+                <property name="title">
+                 <string>Theme Settings</string>
+                </property>
+                <layout class="QFormLayout" name="themeFormLayout">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="themeLabel">
+                   <property name="text">
+                    <string>Theme:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QComboBox" name="themeComboBox">
+                   <item>
+                    <property name="text">
+                     <string>Default</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Dark</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Light</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="fontSizeLabel">
+                   <property name="text">
+                    <string>Font Size:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QSpinBox" name="fontSizeSpinBox">
+                   <property name="minimum">
+                    <number>8</number>
+                   </property>
+                   <property name="maximum">
+                    <number>24</number>
+                   </property>
+                   <property name="value">
+                    <number>10</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="displayGroup">
+                <property name="title">
+                 <string>Display Settings</string>
+                </property>
+                <layout class="QFormLayout" name="displayFormLayout">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="showToolTipsLabel">
+                   <property name="text">
+                    <string>Show Tooltips:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="showToolTipsCheckBox">
+                   <property name="text">
+                    <string>Enable</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="showIconsLabel">
+                   <property name="text">
+                    <string>Show Icons in Menus:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QCheckBox" name="showIconsCheckBox">
+                   <property name="text">
+                    <string>Enable</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="notificationsTab">
+         <attribute name="title">
+          <string>Notifications</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="notificationsLayout">
+          <item>
+           <widget class="QScrollArea" name="notificationsScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="notificationsScrollContent">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>712</width>
+               <height>417</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="notificationsContentLayout">
+              <item>
+               <widget class="QGroupBox" name="alertsGroup">
+                <property name="title">
+                 <string>Alert Settings</string>
+                </property>
+                <layout class="QFormLayout" name="alertsFormLayout">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="enableAlertsLabel">
+                   <property name="text">
+                    <string>Enable Alerts:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="enableAlertsCheckBox">
+                   <property name="text">
+                    <string>Enable</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="maintenanceAlertsLabel">
+                   <property name="text">
+                    <string>Maintenance Alerts:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QCheckBox" name="maintenanceAlertsCheckBox">
+                   <property name="text">
+                    <string>Enable</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="deprecationAlertsLabel">
+                   <property name="text">
+                    <string>End of Useful Life Alerts:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QCheckBox" name="deprecationAlertsCheckBox">
+                   <property name="text">
+                    <string>Enable</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="alertDaysLabel">
+                   <property name="text">
+                    <string>Alert Days Before:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QSpinBox" name="alertDaysSpinBox">
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>365</number>
+                   </property>
+                   <property name="value">
+                    <number>30</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="emailGroup">
+                <property name="title">
+                 <string>Email Notifications</string>
+                </property>
+                <layout class="QFormLayout" name="emailFormLayout">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="enableEmailLabel">
+                   <property name="text">
+                    <string>Enable Email Notifications:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="enableEmailCheckBox">
+                   <property name="text">
+                    <string>Enable</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="emailAddressLabel">
+                   <property name="text">
+                    <string>Email Address:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="emailAddressLineEdit">
+                   <property name="placeholderText">
+                    <string>Enter email address</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="importTab">
+         <attribute name="title">
+          <string>Import</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="importLayout">
+          <item>
+           <widget class="QScrollArea" name="importScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="importScrollContent">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>712</width>
+               <height>417</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="importContentLayout">
+              <item>
+               <widget class="QGroupBox" name="importGroup">
+                <property name="title">
+                 <string>Import Data</string>
+                </property>
+                <layout class="QVBoxLayout" name="importFormLayout">
+                 <item>
+                  <widget class="QLabel" name="importInstructionsLabel">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Import data from CSV or Excel (XLSX) files.</string>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="fileSelectLayout">
+                   <item>
+                    <widget class="QLineEdit" name="importFilePathInput">
+                     <property name="readOnly">
+                      <bool>true</bool>
+                     </property>
+                     <property name="placeholderText">
+                      <string>Select a file to import...</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="browseImportBtn">
+                     <property name="text">
+                      <string>Browse</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="headerRowCheckBox">
+                   <property name="text">
+                    <string>First row contains headers</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="importDataBtn">
+                   <property name="text">
+                    <string>Import Data</string>
+                   </property>
+                  </widget>
+                 </item>
+                                 <item>
+                                    <widget class="QProgressBar" name="importProgressBar">
+                                     <property name="minimum">
+                                        <number>0</number>
+                                     </property>
+                                     <property name="maximum">
+                                        <number>100</number>
+                                     </property>
+                                     <property name="value">
+                                        <number>0</number>
+                                     </property>
+                                    </widget>
+                                 </item>
+                                 <item>
+                                    <widget class="QTableWidget" name="importPreviewTable">
+                                     <property name="minimumSize">
+                                        <size>
+                                         <width>600</width>
+                                         <height>180</height>
+                                        </size>
+                                     </property>
+                                     <property name="rowCount">
+                                        <number>0</number>
+                                     </property>
+                                     <property name="columnCount">
+                                        <number>0</number>
+                                     </property>
+                                    </widget>
+                                 </item>
+                                 <item>
+                                    <widget class="QFrame" name="importSummaryFrame">
+                                     <property name="frameShape">
+                                        <enum>QFrame::Shape::StyledPanel</enum>
+                                     </property>
+                                     <layout class="QHBoxLayout" name="importSummaryLayout">
+                                        <item>
+                                         <widget class="QLabel" name="importSuccessLabel">
+                                            <property name="text">
+                                             <string>Success: 0</string>
+                                            </property>
+                                         </widget>
+                                        </item>
+                                        <item>
+                                         <widget class="QLabel" name="importFailedLabel">
+                                            <property name="text">
+                                             <string>Failed: 0</string>
+                                            </property>
+                                         </widget>
+                                        </item>
+                                        <item>
+                                         <spacer name="importSummarySpacer">
+                                            <property name="orientation">
+                                             <enum>Qt::Orientation::Horizontal</enum>
+                                            </property>
+                                            <property name="sizeHint" stdset="0">
+                                             <size>
+                                                <width>40</width>
+                                                <height>20</height>
+                                             </size>
+                                            </property>
+                                         </spacer>
+                                        </item>
+                                        <item>
+                                         <widget class="QLabel" name="importPercentLabel">
+                                            <property name="text">
+                                             <string>0%</string>
+                                            </property>
+                                         </widget>
+                                        </item>
+                                     </layout>
+                                    </widget>
+                                 </item>
+                                 <item>
+                                    <widget class="QLabel" name="importStatusLabel">
+                                     <property name="text">
+                                        <string/>
+                                     </property>
+                                     <property name="wordWrap">
+                                        <bool>true</bool>
+                                     </property>
+                                    </widget>
+                                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="buttonFrame">
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <layout class="QHBoxLayout" name="buttonLayout">
+         <item>
+          <spacer name="buttonSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="saveBtn">
+           <property name="text">
+            <string>Save Settings</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="resetBtn">
+           <property name="text">
+            <string>Reset to Defaults</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,901 @@
+/* ===== DARK MODE =======*/
+#logoFrame {
+    background-color: transparent;
+    border: none;
+    margin: 0px;
+    min-height: 60px;
+    max-height: 60px;
+}
+
+#logoLabel {
+    background-color: transparent;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    qproperty-alignment: AlignCenter;
+}
+/* Remove the background image style that might interfere */
+/* Main application styling */
+QMainWindow {
+    background-color: #1e1e2e;
+    color: #e2e8f0;
+}
+
+/* Navigation frame styling */
+#navFrame {
+    background-color: #0066cc;  /* Hospital blue */
+    min-width: 200px;
+    max-width: 200px;
+    border: none;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-right: 8px;  /* Add some spacing from the content */
+}
+
+/* Logo frame and label styling */
+/* #logoFrame {
+    background-color: transparent;
+    border: none;
+    margin: 0px;
+    min-height: 60px;
+    max-height: 60px;
+}
+
+#logoBackground {
+    background-image: url(../static/images/logo.png);
+    background-position: center;
+    background-repeat: none;
+    margin: 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+} */
+
+/* Asset scroll area styling */
+#assetScrollArea {
+    background-color: #0077ee;  /* Slightly lighter blue */
+    border: none;
+}
+
+#assetSubMenu {
+    background-color: #0077ee;
+    margin: 0;
+    padding: 0;
+}
+
+#assetSubMenu QPushButton {
+    margin-right: 5px;  /* Add some margin to account for scrollbar */
+    color: white;
+    text-align: left;
+    padding: 8px 8px 8px 20px;
+    border: none;
+    background-color: transparent;
+    font-weight: normal;
+}
+
+#assetSubMenu QPushButton:hover {
+    background-color: #0055aa;  /* Darker blue */
+}
+
+/* Navigation buttons styling */
+#dashboardBtn,
+#assetsBtn,
+#reportsBtn,
+#adminBtn,
+#notificationsBtn,
+#settingsBtn,
+#logoutBtn {
+    color: white;
+    text-align: left;
+    padding: 10px 10px 10px 15px;
+    border: none;
+    background-color: transparent;
+    font-weight: normal;
+}
+
+#dashboardBtn:hover,
+#assetsBtn:hover,
+#reportsBtn:hover,
+#adminBtn:hover,
+#notificationsBtn:hover,
+#settingsBtn:hover,
+#logoutBtn:hover {
+    background-color: #0055aa;
+}
+
+#logoutBtn {
+    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#addAssetBtn {
+    color: white;
+    text-align: left;
+    padding: 10px 10px 10px 35px;
+    border: none;
+    background-color: transparent;
+    font-weight: normal;
+}
+
+#addAssetBtn:hover {
+    background-color: #0055aa;
+}
+
+/* Button styling */
+QPushButton {
+    padding: 8px 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #0055aa;
+}
+
+QPushButton:pressed {
+    background-color: #004488;
+}
+
+QPushButton:disabled {
+    background-color: #4a5568;
+    color: #a0aec0;
+}
+
+/* Export button specific styling */
+#exportButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#exportButton:hover {
+    background-color: #2980b9;
+}
+
+#exportButton:pressed {
+    background-color: #21618c;
+}
+
+/* Table styling */
+QTableView {
+    border: 1px solid #4a5568;
+    background-color: #2d3748;
+    gridline-color: #4a5568;
+    alternate-background-color: #2a3345;
+    selection-background-color: #0066cc;
+    selection-color: white;
+}
+
+QTableView::item {
+    padding: 8px;
+    border-bottom: 1px solid #4a5568;
+    color: #e2e8f0;
+}
+
+QTableView::item:selected {
+    background-color: #0066cc;
+    color: white;
+}
+
+QHeaderView::section {
+    padding: 8px;
+    border: none;
+    border-right: 1px solid #4a5568;
+    background-color: #2d3748;
+    color: #e2e8f0;
+    font-weight: bold;
+}
+
+/* Menu bar styling */
+QMenuBar {
+    background-color: #2d3748;
+    color: #e2e8f0;
+    border-bottom: 1px solid #4a5568;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+QMenuBar::item:selected {
+    background-color: #4a5568;
+}
+
+QMenu {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+    padding: 4px;
+    color: #e2e8f0;
+}
+
+QMenu::item {
+    padding: 6px 24px 6px 12px;
+}
+
+QMenu::item:selected {
+    background-color: #0066cc;
+    color: white;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #4a5568;
+    margin: 4px 0;
+}
+
+/* Status bar styling */
+QStatusBar {
+    background-color: #2d3748;
+    border-top: 1px solid #4a5568;
+    color: #e2e8f0;
+}
+
+/* Toolbar styling */
+QToolBar {
+    background-color: #2d3748;
+    border-bottom: 1px solid #4a5568;
+    spacing: 5px;
+    padding: 4px;
+}
+
+/* Search box styling */
+QLineEdit {
+    padding: 6px;
+    border: 1px solid #4a5568;
+    border-radius: 4px;
+    background-color: #2d3748;
+    color: #e2e8f0;
+    selection-background-color: #0066cc;
+    selection-color: white;
+}
+
+QLineEdit:focus {
+    border: 1px solid #0066cc;
+}
+
+/* Scrollbar styling */
+QScrollBar:vertical {
+    border: none;
+    background: #2d3748;
+    width: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #4a5568;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #718096;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #2d3748;
+    height: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #4a5568;
+    border-radius: 5px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #718096;
+}
+
+/* Dashboard Styles */
+#totalAssetsFrame, #totalValueFrame, #totalCategoriesFrame {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+    border-radius: 8px;
+    padding: 15px;
+    min-height: 120px;
+}
+
+#totalAssetsFrame {
+    background: linear-gradient(135deg, #2d3748 0%, #2c5282 100%);
+    border-left: 4px solid #3498db;
+}
+
+#totalValueFrame {
+    background: linear-gradient(135deg, #2d3748 0%, #276749 100%);
+    border-left: 4px solid #2ecc71;
+}
+
+#totalCategoriesFrame {
+    background: linear-gradient(135deg, #2d3748 0%, #742a2a 100%);
+    border-left: 4px solid #e74c3c;
+}
+
+#totalAssetsTitle, #totalValueTitle, #totalCategoriesTitle {
+    color: #a0aec0;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#totalAssetsLabel, #totalValueLabel, #totalCategoriesLabel {
+    color: #f7fafc;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#valuationFrame, #recentActivitiesFrame, #assetCategoryFrame {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+}
+
+#valuationLabel, #recentActivitiesLabel, #assetCategoryLabel {
+    color: #f7fafc;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#recentActivitiesList {
+    border: none;
+    background-color: transparent;
+}
+
+#recentActivitiesList::item {
+    padding: 8px;
+    border-bottom: 1px solid #4a5568;
+    color: #e2e8f0;
+}
+
+#recentActivitiesList::item:hover {
+    background-color: #4a5568;
+}
+
+/* Login screen specific styles */
+#LoginScreen {
+    background-color: #1a202c;
+}
+
+#leftFrame {
+    background-color: #2d3748;
+    border-right: 1px solid #4a5568;
+    padding: 40px;
+}
+
+#rightFrame {
+    min-width: 400px;
+    background-image: url(../static/images/logo.jpg);
+    background-position: center center;
+    background-repeat: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* Login form elements */
+#titleLabel {
+    color: #0066cc;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    qproperty-alignment: AlignCenter;
+}
+
+#subtitleLabel {
+    color: #a0aec0;
+    font-size: 14px;
+    margin-bottom: 20px;
+    qproperty-alignment: AlignCenter;
+}
+
+#usernameInput, #passwordInput {
+    height: 40px;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #4a5568;
+    background-color: #2d3748;
+    color: #e2e8f0;
+}
+
+#usernameInput:focus, #passwordInput:focus {
+    border: 2px solid #0066cc;
+}
+
+#loginButton {
+    height: 40px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#loginButton:hover {
+    background-color: #0055aa;
+}
+
+#loginButton:pressed {
+    background-color: #004488;
+}
+
+#errorLabel {
+    color: #fc8181;
+    font-size: 12px;
+    margin-top: 10px;
+    qproperty-alignment: AlignCenter;
+}
+
+/* Right side logo and welcome text (LOGIN SCREEN ONLY) */
+#LoginScreen #logoLabel {
+    min-width: 200px;
+    min-height: 200px;
+    qproperty-alignment: AlignCenter;
+    margin: 20px;
+}
+
+/* Sidebar logo label */
+#navFrame #logoLabel {
+    background-color: transparent;
+    border: none;
+    qproperty-alignment: AlignCenter;
+    margin: 0px;
+    padding: 0px;
+    min-height: 40px;
+}
+
+#welcomeLabel {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    qproperty-alignment: AlignCenter;
+}
+
+/* Notification Screen Styles */
+#NotificationScreen #titleLabel {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e2e8f0;
+    margin-bottom: 16px;
+}
+
+#NotificationScreen #centralFrame {
+    background-color: #1a202c;
+    border: 1px solid #2d3748;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Notification frames styling */
+#NotificationScreen QFrame[notification="true"] {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+#NotificationScreen QFrame[notification="true"]:hover {
+    background-color: #2c3544;
+    border-color: #4a5568;
+}
+
+#NotificationScreen QFrame[notification="true"][unread="true"] {
+    background-color: #2c3544;
+    border-left: 4px solid #4299e1;
+}
+
+#NotificationScreen QFrame[type="warning"] {
+    border-left: 4px solid #ecc94b;
+}
+
+#NotificationScreen QFrame[type="error"] {
+    border-left: 4px solid #fc8181;
+}
+
+#NotificationScreen QFrame[type="success"] {
+    border-left: 4px solid #48bb78;
+}
+
+#NotificationScreen QFrame[type="info"] {
+    border-left: 4px solid #4299e1;
+}
+
+#NotificationScreen QFrame[type="maintenance"] {
+    border-left: 4px solid #b794f4;
+}
+
+#NotificationScreen QLabel[role="notification-title"] {
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+#NotificationScreen QLabel[role="notification-message"] {
+    color: #a0aec0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#NotificationScreen QLabel[role="notification-time"] {
+    color: #718096;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Tab widget styling */
+#NotificationScreen #notificationTabs {
+    background-color: transparent;
+}
+
+#NotificationScreen #notificationTabs::pane {
+    border: none;
+    background-color: #2d3748;
+    border-radius: 8px;
+}
+
+#NotificationScreen #notificationTabs QTabBar::tab {
+    padding: 8px 16px;
+    margin-right: 4px;
+    border: none;
+    background-color: #4a5568;
+    border-radius: 6px 6px 0 0;
+    color: #e2e8f0;
+    font-weight: 500;
+    min-width: 100px;
+}
+
+#NotificationScreen #notificationTabs QTabBar::tab:selected {
+    background-color: #2d3748;
+    color: #90cdf4;
+    border-bottom: 2px solid #90cdf4;
+}
+
+#NotificationScreen #notificationTabs QTabBar::tab:hover:!selected {
+    background-color: #718096;
+}
+
+/* Scroll Areas */
+#NotificationScreen QScrollArea {
+    border: none;
+    background-color: transparent;
+}
+
+#NotificationScreen QScrollArea > QWidget > QWidget {
+    background-color: transparent;
+}
+
+/* Placeholder styling */
+#NotificationScreen QLabel[objectName$="Placeholder"] {
+    color: #718096;
+    font-size: 14px;
+    padding: 32px;
+    font-weight: 500;
+    background-color: #2d3748;
+    border-radius: 8px;
+    border: 1px dashed #4a5568;
+    qproperty-alignment: AlignCenter;
+}
+
+/* Settings Screen Styles */
+#SettingScreen #titleLabel {
+    font-size: 24px;
+    font-weight: 600;
+    color: #e2e8f0;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+#SettingScreen #centralFrame {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0 2px;
+}
+
+/* Settings tab widget styling */
+#SettingScreen #settingTabs {
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+#SettingScreen #settingTabs::pane {
+    border: none;
+    background-color: #2d3748;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+#SettingScreen #settingTabs QTabBar::tab {
+    padding: 12px 24px;
+    margin-right: 6px;
+    border: none;
+    background-color: #4a5568;
+    border-radius: 8px 8px 0 0;
+    color: #e2e8f0;
+    font-weight: 500;
+    min-width: 120px;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+}
+
+#SettingScreen #settingTabs QTabBar::tab:selected {
+    background-color: #2d3748;
+    color: #60a5fa;
+    border-bottom: 2px solid #60a5fa;
+    font-weight: 600;
+}
+
+#SettingScreen #settingTabs QTabBar::tab:hover:!selected {
+    background-color: #4a5568;
+    color: #60a5fa;
+    border-bottom: 2px solid #4a5568;
+}
+
+/* Settings group boxes */
+#SettingScreen QGroupBox {
+    font-weight: 600;
+    font-size: 14px;
+    color: #e2e8f0;
+    border: 1px solid #4a5568;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-top: 12px;
+    background-color: #2d3748;
+}
+
+#SettingScreen QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 8px 0 8px;
+    color: #e2e8f0;
+}
+
+/* Settings form labels */
+#SettingScreen QLabel {
+    color: #cbd5e0;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Settings input widgets */
+#SettingScreen QCheckBox {
+    color: #cbd5e0;
+    font-size: 12px;
+}
+
+#SettingScreen QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+#SettingScreen QCheckBox::indicator:unchecked {
+    border: 1px solid #4a5568;
+    background-color: #2d3748;
+    border-radius: 3px;
+}
+
+#SettingScreen QCheckBox::indicator:checked {
+    border: 1px solid #0066cc;
+    background-color: #0066cc;
+    border-radius: 3px;
+    image: url(:/icons/checkmark_white.svg);
+}
+
+#SettingScreen QComboBox {
+    padding: 4px 8px;
+    border: 1px solid #4a5568;
+    border-radius: 4px;
+    background-color: #2d3748;
+    color: #e2e8f0;
+    min-width: 120px;
+}
+
+#SettingScreen QComboBox:focus {
+    border-color: #2b6cb0;
+}
+
+#SettingScreen QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #4a5568;
+}
+
+#SettingScreen QSpinBox {
+    padding: 4px 8px;
+    border: 1px solid #4a5568;
+    border-radius: 4px;
+    background-color: #2d3748;
+    color: #e2e8f0;
+    min-width: 80px;
+}
+
+#SettingScreen QSpinBox:focus {
+    border-color: #2b6cb0;
+}
+
+#SettingScreen QLineEdit {
+    padding: 6px 8px;
+    border: 1px solid #4a5568;
+    border-radius: 4px;
+    background-color: #2d3748;
+    color: #e2e8f0;
+}
+
+#SettingScreen QLineEdit:focus {
+    border-color: #2b6cb0;
+}
+
+#SettingScreen QLineEdit:read-only {
+    background-color: #4a5568;
+    color: #a0aec0;
+}
+
+/* Settings buttons */
+#SettingScreen #saveBtn {
+    background-color: #2b6cb0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#SettingScreen #saveBtn:hover {
+    background-color: #2c5aa0;
+}
+
+#SettingScreen #resetBtn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#SettingScreen #resetBtn:hover {
+    background-color: #5a6268;
+}
+
+/* Action buttons in settings */
+#SettingScreen #browseBackupBtn,
+#SettingScreen #backupNowBtn,
+#SettingScreen #clearCacheBtn,
+#SettingScreen #resetSettingsBtn,
+#SettingScreen #checkUpdatesBtn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+#SettingScreen #browseBackupBtn:hover,
+#SettingScreen #backupNowBtn:hover,
+#SettingScreen #clearCacheBtn:hover,
+#SettingScreen #resetSettingsBtn:hover,
+#SettingScreen #checkUpdatesBtn:hover {
+    background-color: #2980b9;
+}
+
+/* Warning buttons */
+#SettingScreen #resetSettingsBtn {
+    background-color: #e74c3c;
+}
+
+#SettingScreen #resetSettingsBtn:hover {
+    background-color: #c0392b;
+}
+
+/* Asset Details dialog (Dark) */
+#AssetDetails {
+    background-color: #232533;
+    border: 1px solid #2f3948;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+#AssetDetails QLabel {
+    color: #e2e8f0;
+    font-size: 13px;
+}
+
+#AssetDetails QLabel#nameLabel,
+#AssetDetails QLabel#assetIdLabel,
+#AssetDetails QLabel#categoryLabel,
+#AssetDetails QLabel#departmentLabel,
+#AssetDetails QLabel#statusLabel,
+#AssetDetails QLabel#acqDateLabel,
+#AssetDetails QLabel#expDateLabel,
+#AssetDetails QLabel#valueLabel {
+    color: #f7fafc;
+    font-weight: 600;
+}
+
+#AssetDetails QTextEdit#descriptionText {
+    background-color: #1f2430;
+    border: 1px solid #2f3948;
+    border-radius: 6px;
+    color: #e2e8f0;
+}
+
+#AssetDetails QPushButton#qrButton {
+    background-color: #2E86C1;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+#AssetDetails QPushButton#qrButton:hover {
+    background-color: #246aa0;
+}
+
+/* Asset Delete Reason dialog (Dark) */
+#AssetDeleteReason {
+    background-color: #1e2230;
+    border: 1px solid #2a3342;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#AssetDeleteReason QLabel {
+    color: #e2e8f0;
+    font-size: 13px;
+}
+
+#AssetDeleteReason QTextEdit#reasonEdit {
+    background-color: #121318;
+    border: 1px solid #2a3342;
+    border-radius: 6px;
+    min-height: 80px;
+    color: #e2e8f0;
+}
+
+#AssetDeleteReason QPushButton#okBtn,
+#AssetDeleteReason QPushButton#cancelBtn {
+    background-color: #2E86C1;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+#AssetDeleteReason QPushButton#cancelBtn {
+    background-color: #5a718f;
+}
